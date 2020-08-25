@@ -15,3 +15,5 @@ jhipster:
                 base64-secret: ZmU3ZjZmOGE4M2M2MGNjNmE4ZDA4ZGQ3MGIxNDhiMjFjZTcwYjMzYjgzMDZlMmRlOTIxOWMxZmYyNTc4OTdmZmIxYTQzZjM4NDA2Zjk3MTFkNDE1MzY2ZjZiY2ZkNTEwY2EzODFkYjVkNDE4NGJiZmMwNjk1Mzc5MzhmOWQzMzQ=
                 token-validity-in-seconds: 2592000
                 token-validity-in-seconds-for-remember-me: 2592000
+application:
+    msg: hello world
