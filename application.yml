@@ -16,5 +16,5 @@ jhipster:
                 token-validity-in-seconds: 2592000
                 token-validity-in-seconds-for-remember-me: 2592000
 application:
-  msg: hello world git repo
-  message: git repo message
+  msg: hello world git repo updated
+  message: git repo message updated
