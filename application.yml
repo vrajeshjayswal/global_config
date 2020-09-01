@@ -14,6 +14,8 @@ jhipster:
     logstash: # forward logs to ELK
       enabled: true
       host: 35.238.8.156
+      port: 5000
+      queue-size: 512
   metrics:
     logs: # report metrics in the logs
       enabled: true
