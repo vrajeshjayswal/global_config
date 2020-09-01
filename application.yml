@@ -10,29 +10,6 @@ jhipster:
         base64-secret: MWQ2M2YwZjhjMWZiZjRiYTcwY2MwZjQxNmI4M2QzYTdmMzAxMDBlNzBjNjY2OGE4MTI5NjY5Yzk1M2QxMDI4YjJkOTdiOWQ0NmUzZGUwZWZmMzE5YzNkZWY5NjkwYjMzNGE4OA==
         token-validity-in-seconds: 2592000
         token-validity-in-seconds-for-remember-me: 2592000
-  logging:
-    logstash: # forward logs to ELK
-      enabled: true
-      host: 35.238.8.156
-      port: 5000
-      queue-size: 512
-  metrics:
-    logs: # report metrics in the logs
-      enabled: true
-      report-frequency: 60 # in seconds
-
-management:
-  metrics:
-    export:
-      prometheus:
-        enabled: false
-spring:
-  zipkin:
-    base-url: http://35.238.8.156:9411
-    enabled: true
-  sleuth:
-    sampler:
-      probability: 1 # report 100% of traces to Zipkin
 eureka:
   client:
     service-url:
