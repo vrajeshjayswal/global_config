@@ -36,7 +36,7 @@ eureka:
     service-url:
       defaultZone: http://admin:${jhipster.registry.password}@34.70.199.19:8761/eureka/
 kafka:
-  bootstrap-servers: 34.123.21.130:9092
+  bootstrap-servers: 35.232.0.0:9092
   consumer:
     key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
