@@ -26,7 +26,7 @@ management:
         enabled: false
 spring:
   zipkin:
-    base-url: http://34.70.199.19:9411
+    base-url: http://104.198.165.52:9411
     enabled: true
   sleuth:
     sampler:
@@ -34,9 +34,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@34.70.199.19:8761/eureka/
+      defaultZone: http://admin:${jhipster.registry.password}@104.198.165.52:8761/eureka/
 kafka:
-  bootstrap-servers: 35.232.0.0:9092
+  bootstrap-servers: 34.67.106.155:9092
   consumer:
     key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
