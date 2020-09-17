@@ -4,6 +4,12 @@ configserver:
   status: Connected to the JHipster Registry Config Server
 
 jhipster:
+  security:
+    authentication:
+      jwt:
+        base64-secret: MWQ2M2YwZjhjMWZiZjRiYTcwY2MwZjQxNmI4M2QzYTdmMzAxMDBlNzBjNjY2OGE4MTI5NjY5Yzk1M2QxMDI4YjJkOTdiOWQ0NmUzZGUwZWZmMzE5YzNkZWY5NjkwYjMzNGE4OA==
+        token-validity-in-seconds: 2592000
+        token-validity-in-seconds-for-remember-me: 2592000
   logging:
     logstash: # forward logs to ELK
       enabled: false
@@ -21,7 +27,7 @@ management:
 spring:
   zipkin:
     base-url: http://34.66.65.247:9411
-    enabled: false
+    enabled: true
   sleuth:
     sampler:
       probability: 1 # report 100% of traces to Zipkin
@@ -30,7 +36,7 @@ eureka:
     service-url:
       defaultZone: http://admin:${jhipster.registry.password}@34.66.65.247:8761/eureka/
 kafka:
-  bootstrap-servers: 34.122.103.232:9092
+  bootstrap-servers: 35.224.111.173:9092
   consumer:
     key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
