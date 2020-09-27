@@ -32,7 +32,7 @@ spring:
     sampler:
       probability: 1 # report 100% of traces to Zipkin
 kafka:
-  bootstrap-servers: 34.72.137.207:9092
+  bootstrap-servers: 34.121.115.140:9092
   consumer:
     key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value.deserializer: org.apache.kafka.common.serialization.StringDeserializer
